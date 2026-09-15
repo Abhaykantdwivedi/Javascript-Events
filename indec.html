@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile Card</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h2>Create Profile Card</h2>
+
+        <form id="userForm">
+
+            <!-- Name -->
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <!-- Email -->
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <!-- Image -->
+            <input
+                type="file"
+                id="image"
+                accept="image/*"
+                required
+            >
+
+            <!-- Submit -->
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+
+        <!-- Result Card -->
+        <div class="result">
+
+            <img id="displayImage" src="" alt="Profile Image">
+
+            <h3 id="displayName"></h3>
+
+            <p id="displayEmail"></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
